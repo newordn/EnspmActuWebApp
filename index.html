@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Posts</title>
+</head>
+<body>
+    <header class="mb-1 row">
+        <div class="col-3 text-right" style="font-size:1.3rem">ENSPM ACTU</div>
+        <nav class="col-9 justify-content-end align-items-center row">
+            <div class="user-avatar">
+                <img alt="avatar" src="imgs/avatar.png" class="user-avatar-img">
+            </div>
+            <div class="user-name ml-2">
+                Neword Newcom Orquel
+            </div>
+            <div class="log-out ml-2">
+                <i class="material-icons">
+                    keyboard_arrow_down
+                </i>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class=" modal fade" id="addPost" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <form class="modal-content card" enctype="multipart/form-data" method="post" action="http://192.168.8.100:8080/user/post/create">
+                    <div class="justify-content-end form-header">
+                        <button class="btn confirm-adding rounded-circle"><i class="material-icons">check</i></button>
+                    </div>
+                        <div class="addPost">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Titre" id="title" name="title">
+                    </div>
+                    <div>
+                        <textarea placeholder="Description" rows="5" class="form-control" name="description"  id="description">
+                        </textarea>
+                        <input type="file" id="file" style="display:none" name="file">
+                        <label for="file" class="file"><i class="material-icons">
+                                attach_file
+                            </i></label>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="posts">
+            <div class="post card mb-3">
+                <div class="row justify-content-between mb-3">
+                    <div class="post-title">
+                        <img alt="avatar" src="imgs/avatar.png" class="user-avatar-img">
+                        Directeur Danwe
+                    </div>
+                    <div class="post-date">
+                        <strong>Résultat du concours de l'Enspm</strong>
+                        il y'a 20min
+                    </div>
+                </div>
+                    <img class="post-image" src="imgs/capture.jpg">
+                    <div class="post-description">
+                        Le concours de l'ecole nationale supérieure ayant eu parfaitement lieu 
+                        pour l'edition 2018, voici joint la liste des candidats retenus.
+                    </div>
+                    <div><i class="material-icons">
+                            cloud_download
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="post card mb-3">
+                <div class="row justify-content-between mb-3">
+                    <div class="post-title">
+                        <img alt="avatar" src="imgs/avatar.png" class="user-avatar-img">
+                        Directeur Danwe
+                    </div>
+                    <div class="post-date">
+                        <strong>Résultat du concours de l'Enspm</strong>
+                        il y'a 20min
+                    </div>
+                </div>
+                <div class="post-description">
+                    Le concours de l'ecole nationale supérieure ayant eu parfaitement lieu
+                    pour l'edition 2018, voici joint la liste des candidats retenus.
+                </div>
+                <div><i class="material-icons">
+                        cloud_download
+                    </i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <button class="addButton btn btn-primary rounded-circle" data-toggle="modal" data-target="#addPost">
+        <i class="material-icons">
+            add
+        </i>
+    </button>
+</body>
+<!--importation-->
+<script src="js/app.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+</html> 

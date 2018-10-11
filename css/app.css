@@ -1,0 +1,75 @@
+.user-avatar-img
+{
+    border-radius: 50%;
+    width:24px;
+    height:24px;
+}
+html,body
+{
+    height:100%;
+ }
+header
+{
+    color:white;
+    padding:1.2rem;
+    background: #82b3c9;
+    font-size:.9rem;
+    position:fixed;
+    right: 0;
+    width:110%;
+    z-index: 1000;
+}
+.container
+{
+    text-align:right;
+    padding:1rem 13rem 2rem 13rem !important;
+    background-color:rgb(240,240,240);
+}
+.file
+{
+    transform: rotate(50deg);
+}
+.post
+{
+    padding:2rem;
+    padding-top:0.5rem;
+}
+.post-title,.post-date
+{
+    font-size:.8rem;
+    font-style:italic;
+}
+.post-image
+{
+    height:25rem;
+}
+.post-description
+{
+    margin-top:1.2rem;
+    font-size:0.9rem;
+    text-align: left;
+}
+.posts
+{
+    
+    margin-top:4rem;
+}
+.addPost
+{
+    padding: 2rem;
+}
+.addButton
+{
+    position:fixed;
+    bottom:1rem;
+    right:8%;
+    height:3.1rem;
+}
+.confirm-adding
+{
+    width:3rem;
+}
+.form-header
+{
+    background-color:rgb(240,240,240);
+}
