@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inscription</title>
-
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 
 <body>
@@ -24,7 +21,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Inscription</h2>
-                        <form method="POST" enctype="multipart/form-data" action="http://192.168.8.100:8080/user/create"
+                        <form method="POST" id="loginForm" enctype="multipart/form-data" action="/"
                             class="register-form" id="register-form">
                             <div style="margin-top:4rem"><i class="zmdi zmdi-photo-size-select-large"></i> </div>
                             <span class='error' id="nameError"></span>
@@ -36,7 +33,7 @@
                             <div class="img-upload-div">
                                 <input class="img-input" type="text" id="image" placeholder="Votre image">
                                 <button class="img-upload" type="button" id="addButton">+</button>
-                                <input type="file" name="file" id="file_image" style="display:none">
+                                <input type="file" name="file" id="file" style="display:none">
                             </div>
                         </form>
                     </div>
@@ -54,8 +51,8 @@
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js" type="module"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../js/app.js" type="module"></script>
 </body>
 <!--by neword -->
 
